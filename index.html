@@ -23,7 +23,7 @@
               <p>I am a fourth-year undergraduate student in the Yao Class <a href="https://iiis.tsinghua.edu.cn/en/yaoclass/"></a>, Tsinghua University .
               </p>
               <p style="text-align:center">
-                <a href="skybhh19@gmail.com">Email</a> &nbsp/&nbsp
+                <a href="mailto:skybhh19@gmail.com">Email</a> &nbsp/&nbsp
                 <a href="data/TianGao-CV.pdf">CV</a> &nbsp/&nbsp
                 <a href="https://github.com/skybhh19/">Github</a>
               </p>
@@ -38,22 +38,62 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
               <p>
-                I am interested in machine learning and learning-based control, including robot learning, and reinforcement learning. My research goal is to develop learning-based algorithms of decision making to build autonomous robots and other embodied agents with robust and generalizable behaviors that can help people in the real world.
+                I'm interested in machine learning and robotics. My research goal is to build autonomous embodied agents with robust and generalizable behaviors that help humans do a wide range of real-world tasks.
               </p>
             </td>
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-					
+          <tr onmouseout="sailor_stop()" onmouseover="sailor_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='sailor_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/sailor.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/sailor.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function sailor_start() {
+                  document.getElementById('sailor_image').style.opacity = "1";
+                }
 
+                function sailor_stop() {
+                  document.getElementById('sailor_image').style.opacity = "0";
+                }
+                sailor_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://ut-austin-rpl.github.io/sailor/">
+                <papertitle>Learning and Retrieval from Prior Data for
+                  Skill-based Imitation Learning</papertitle>
+              </a>
+              <br>
+              <a href="https://snasiriany.me/">Soroush Nasiriany</a>,
+              <strong>Tian Gao</strong>,
+              <a href="https://ai.stanford.edu/~amandlek/">Ajay Mandlekar</a>,
+							<a href="https://www.cs.utexas.edu/~yukez/">Yuke Zhu</a>
+              <br>
+              <em>CoRL</em>, 2022
+              <br>
+              <a href="https://ut-austin-rpl.github.io/sailor/">project page</a>
+              /
+              <a href="https://arxiv.org/abs/2210.11435">arXiv</a>
+              <p></p>
+              <p>
+              A skill-based imitation learning framework for tackling long-horizon robot manipulation tasks data-efficiently and robustly.
+              </p>
+            </td>
+          </tr>
           <tr onmouseout="pair_stop()" onmouseover="pair_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='pair_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/pair.mp4" type="video/mp4">
+                <source src="images/pair.gif" type="video/mp4">
                 Your browser does not support the video tag.
                 </video></div>
-                <img src='images/pair.jpg' width="160">
+                <img src='images/pair.gif' width="160">
               </div>
               <script type="text/javascript">
                 function pair_start() {
@@ -75,17 +115,27 @@
               <a href="https://irisli17.github.io/">Yunfei Li*</a>,
               <strong>Tian Gao*</strong>,
               <a href="https://scholar.google.com/citations?user=BaCR90MAAAAJ&hl=en">Jiaqi Yang</a>,
-              <a href="https://http://hxu.rocks/">Huazhe Xu</a>,
+              <a href="http://hxu.rocks/">Huazhe Xu</a>,
 							<a href="https://jxwuyi.weebly.com/">Yi Wu</a>
               <br>
-              <em>arXiv</em>, 2022
+              <em>ICML</em>, 2022
               <br>
-              <a href="https://pair3d.github.io/">project page</a>
+              <a href="https://sites.google.com/view/pair-gcrl/">project page</a>
               /
               <a href="https://arxiv.org/abs/2206.12030/">arXiv</a>
               <p></p>
               <p>
-              We propose a phasic self-imitative reduction (PAIR) framework for tackling sparse-reward goal-conditioned RL problems.
+              A phasic self-imitative reduction (PAIR) framework for tackling sparse-reward goal-conditioned RL problems effectively.
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:0px">
+              <br>
+              <p style="text-align:right;font-size:small;">
+                Website template from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a>,
               </p>
             </td>
           </tr>

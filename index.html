@@ -42,13 +42,100 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
               <p>
-              I am developing decision making methods for (1) enabling embodied agents to learn with minimal human supervision and limited prior domain knowledge and (2) improving the robustness and the sample efficiency of policy learning.
               </p>
             </td>
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-		  <tr onmouseout="prime_stop()" onmouseover="prime_start()">
+		  <tr onmouseout="steervla_stop()" onmouseover="steervla_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='steervla_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/steervla.gif" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/steervla.gif' width="160">
+              </div>
+              <script type="text/javascript">
+                function steervla_start() {
+                  document.getElementById('steervla_image').style.opacity = "1";
+                }
+
+                function steervla_stop() {
+                  document.getElementById('steervla_image').style.opacity = "0";
+                }
+                steervla_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://steervla.github.io/">
+                <papertitle>Policy Agnostic RL: Offline RL and Online RL Fine-Tuning of Any Class and Backbone</papertitle>
+              </a>
+              <br>
+              <strong>Tian Gao*</strong>,
+              <a href="https://celineltan.github.io/" target="_blank">Celine Tan*</a>,
+              <a href="https://catglossop.github.io/" target="_blank">Catherine Glossop</a>,
+              <a href="https://github.com/timothygao8710/" target="_blank">Timothy Gao</a>,
+              <a href="https://web.stanford.edu/~jksun/" target="_blank">Jiankai Sun</a>,
+              <a href="https://github.com/kylestach/" target="_blank">Kyle Stachowicz</a>,
+              <a href="https://cs.stanford.edu/~shirwu/" target="_blank">Shirley Wu</a>,
+              <a href="https://www.oiermees.com/" target="_blank">Oier Mees</a>,
+              <a href="https://dorsa.fyi/" target="_blank">Dorsa Sadigh</a>,
+              <a href="https://people.eecs.berkeley.edu/~svlevine/" target="_blank">Sergey Levine</a>,
+              <a href="https://ai.stanford.edu/~cbfinn/" target="_blank">Chelsea Finn</a>,
+              <br>
+              <a href="https://steervla.github.io/">project page</a>
+              /
+              <a href="https://arxiv.org/abs/2602.08440/">arXiv</a>
+              <p></p>
+              <p>
+			        SteerVLA uses VLM reasoning to steer a VLA policy for robust control in long-tail driving scenarios.
+              </p>
+            </td>
+          </tr>
+      <tr onmouseout="parl_stop()" onmouseover="parl_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='parl_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/parl.gif" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/parl.gif' width="160">
+              </div>
+              <script type="text/javascript">
+                function parl_start() {
+                  document.getElementById('parl_image').style.opacity = "1";
+                }
+
+                function parl_stop() {
+                  document.getElementById('parl_image').style.opacity = "0";
+                }
+                parl_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://PolicyAgnosticRL.github.io/">
+                <papertitle>Policy Agnostic RL: Offline RL and Online RL Fine-Tuning of Any Class and Backbone</papertitle>
+              </a>
+              <br>
+              <a href="https://maxsobolmark.com/" target="_blank">Max&nbsp;Sobol&nbsp;Mark</a>,
+              <strong>Tian Gao</strong>,
+              <a href="https://www.linkedin.com/in/ggsamp" target="_blank">Georgia&nbsp;Gabriela&nbsp;Sampaio</a>,
+              <a href="https://www.mohansrirama.com/" target="_blank">Mohan&nbsp;Kumar</a>,
+              <a href="https://architsharma97.github.io/" target="_blank">Archit&nbsp;Sharma</a>,
+              <a href="https://ai.stanford.edu/~cbfinn/" target="_blank">Chelsea&nbsp;Finn</a>,
+              <a href="https://aviralkumar2907.github.io/" target="_blank">Aviral&nbsp;Kumar</a>
+              <br>
+              <a href="https://PolicyAgnosticRL.github.io/">project page</a>
+              /
+              <a href="https://arxiv.org/abs/2412.06685/">arXiv</a>
+              <p></p>
+              <p>
+			        Fine-tuning multiple policy classes with Actor-Critic RL.
+              </p>
+            </td>
+          </tr>
+          <tr onmouseout="prime_stop()" onmouseover="prime_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='prime_image'><video  width=100% height=100% muted autoplay loop>
@@ -58,14 +145,14 @@
                 <img src='images/prime.png' width="160">
               </div>
               <script type="text/javascript">
-                function sailor_start() {
+                function prime_start() {
                   document.getElementById('prime_image').style.opacity = "1";
                 }
 
-                function sailor_stop() {
+                function prime_stop() {
                   document.getElementById('prime_image').style.opacity = "0";
                 }
-                sailor_stop()
+                prime_stop()
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
@@ -77,7 +164,7 @@
               <a href="https://snasiriany.me/">Soroush Nasiriany</a>,
               <a href="https://huihanl.github.io/">Huihan Liu</a>,
               <a href="https://yquantao.github.io/">Quantao Yang</a>,
-			  <a href="https://www.cs.utexas.edu/~yukez/">Yuke Zhu</a>
+			        <a href="https://www.cs.utexas.edu/~yukez/">Yuke Zhu</a>
               <br>
               <em>IEEE Robotics and Automation Letters (RA-L)</em>, 2024
               <br>
@@ -86,7 +173,7 @@
               <a href="http://arxiv.org/abs/2403.00929/">arXiv</a>
               <p></p>
               <p>
-			  A primitive-based data-efficient imitation learning framework that scaffolds manipulation tasks with behavior primitives, breaking down long human demonstrations into concise, simple behavior primitive sequences.
+			        A primitive-based data-efficient imitation learning framework that scaffolds manipulation tasks with behavior primitives, breaking down long human demonstrations into concise, simple behavior primitive sequences.
               </p>
             </td>
           </tr>
